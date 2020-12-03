@@ -1,4 +1,4 @@
-FROM nginx:1.19-alpine
+FROM nginx:latest
 
 RUN mkdir -p /usr/src/app
-COPY etc/ /etc/
+COPY default.conf /etc/nginx/conf.d/default.conf
